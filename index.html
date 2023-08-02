@@ -540,57 +540,66 @@
     <!-- -------------------Верні  ---  is hidden-------- -->
     <div class="backdrop" data-modal>
       <div class="modal">
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form action="#" class="modal-form">
+          <div class="modal-wrap-group">
+            <label for="user-name" class="modal-label">Name</label>
+
+            <div class="modal-wrap">
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+              <input
+                type="text"
+                class="modal-input"
+                id="user-name"
+                name="user-name"
+                minlength="10"
+                maxlength="12"
+                required
+              />
+            </div>
+
+            <label for="user-phone" class="modal-label">Phone</label>
+            <div class="modal-wrap">
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+              <input
+                type="tel"
+                class="modal-input"
+                id="user-phone"
+                name="user-phone"
+                minlength="10"
+                maxlength="12"
+                required
+              />
+            </div>
+
+            <label for="user-email" class="modal-label">Email</label>
+            <div class="modal-wrap">
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+              <input
+                type="email"
+                class="modal-input"
+                id="user-email"
+                name="user-email"
+                minlength="10"
+                maxlength="12"
+                required
+              />
+            </div>
+
+            <button type="submit" class="modal-form-btn">Send</button>
+          </div>
+        </form>
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-button" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form action="#" class="modal-form">
-          <label for="user-name" class="modal-label">Name</label>
-          <svg class="modal-icon"  width="18" height="18">
-            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-          </svg>
-          <input
-            type="text"
-            class="modal-input"
-            id="user-name"
-            name="user-name"
-            minlength="10"
-            maxlength="12"
-            required
-          />
-
-          <label for="user-phone" class="modal-label">Phone</label>
-          <svg class="modal-icon" width="18" height="24">
-            <use href="./images/icons.svg#icon-phone-black-18dp-1" ></use>
-          </svg>
-          <input
-            type="tel"
-            class="modal-input"
-            id="user-phone"
-            name="user-phone"
-            minlength="10"
-            maxlength="12"
-            required
-          />
-
-          <label for="user-email" class="modal-label">Email</label>
-          <svg class="modal-icon"  width="18" height="24">
-            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-          </svg>
-          <input
-            type="email"
-            class="modal-input"
-            id="user-email"
-            name="user-email"
-            minlength="10"
-            maxlength="12"
-            required
-          />
-
-          <button type="submit" class="modal-form-btn">Send</button>
-        </form>
       </div>
     </div>
     <!-- --------------End-of-modal------------------- -->

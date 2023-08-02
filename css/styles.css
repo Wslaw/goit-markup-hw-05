@@ -752,6 +752,8 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
+  flex-shrink: 0;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -768,13 +770,9 @@ body {
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  /* -------------------------Замечание бота для кнопки-------------- */
-  /* display: flex; */
-  /*  */
-  /*  */
-
+  padding-right: 0;
+  flex-shrink: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* -----------Замечание бота для кнопк ------------------ */
 }
 
 .modal-close-btn {
@@ -798,6 +796,10 @@ body {
   width: 24px;
 }
 
+.open-modal:hover {
+    opacity: 0.8;
+}
+
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--ocean);
@@ -816,6 +818,14 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
+/*       ---------------------___________--------------------- */
+
+
+
+
+
+
 /* -------------------------------02082023------------------ */
 
 .modal {
@@ -824,35 +834,80 @@ body {
 
 .modal-title {
   color: var(--navybluemodal);
-text-align: center;
-margin-bottom: 16px;
-
-/* Body Medium */
+/* text-align: center; */
+padding-bottom: 16px;
 font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 1.5; /* 150% */
+line-height: 1.5; 
 letter-spacing: 0.02em;
 }
 
 .modal-form {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 360px;
+  min-height: 58px;
+    padding: 72px 24px 24px 24px;
+    color: var(--lightslate-colr);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+  
+  
+  .modal-wrap-group {
+display: flex;
+flex-direction: column;
+gap: 8px;
+padding: 0;
+margin: 0;
+border: none;
+}
 
+.modal-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4px;
 }
 
 .modal-input {
   width: 100%;
-  height: 58px;
-  display: flex;
-width: 360px;
-flex-direction: column;
-align-items: flex-start;
-gap: 8px;
-border-radius: 4px;
-
+  min-height: 40px;
+  padding-left: 38px;
+  border-radius: 4px;
+  border: 1px solid var(--navy-blue, rgba(46, 47, 66, 0.40));
 }
-.modal-form-btn {
 
+.modal-wrap {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  /* top: 27px; */
+  fill: var(--navybluemodal);
+  transform: translateY(50%);
+}
+
+
+
+
+
+
+
+
+
+
+.modal-form-btn {
+  
 }
 
 
