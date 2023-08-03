@@ -994,7 +994,7 @@ body {
 .check-input {
   margin-top: 8px;
 }
-.check-input:checked + .check-span {
+.check-input:checked + .modal-label-text .check-span {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
