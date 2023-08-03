@@ -973,7 +973,7 @@ body {
 .check-input {
   margin-top: 8px;
 }
-.check-input:checked span {
+.check-input:checked + span {
   background-color: var(--ocean);
   border: none;
   font: var(--cloud);
