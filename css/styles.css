@@ -863,7 +863,8 @@ margin: 0;
 border: none;
 } */
 
-.modal-label {
+.modal-label,
+.comment-label {
   position: relative;
   display: block;
   flex-direction: column;
@@ -886,6 +887,8 @@ border: none;
   outline: transparent; */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .modal-wrap {
