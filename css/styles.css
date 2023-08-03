@@ -908,10 +908,10 @@ body {
   /* color: #4d5ae5; */
 }
 
-.modal-submit {
+.modal-field {
   margin-bottom: 16px;
 }
-.textarea {
+.modal-comment {
   width: 100%;
   max-width: 360px;
   min-height: 120px;
@@ -933,7 +933,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea:focus {
+.modal-comment:focus {
   border-color: var(--iris);
 }
 .comment-label {
@@ -945,7 +945,7 @@ body {
   /*  font-size: 12px;*/
 }
 
-.modal-check {
+.modal-field-check {
   margin-bottom: 24px;
 }
 
@@ -956,7 +956,22 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--lightslate);
+  display: flex;
+  align-items: center;
 }
+.modal-label-text .check-span {
+  width: 16px;
+  height: 16px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border: 1px solid var(--navybluemodal);
+  /* stroke-width: 1px; */
+  /* stroke: var(--navybluemodal, rgba(46, 47, 66, 0.4)); */
+}
+
 .modal-accent-privacy {
   display: inline-flex;
   align-items: center;
@@ -973,16 +988,20 @@ body {
 .check-input {
   margin-top: 8px;
 }
-.check-input:checked + span {
+.check-input:checked + .modal-accent-privacy {
   background-color: var(--ocean);
   border: none;
-  font: var(--cloud);
+  fill: var(--cloud);
 }
 
 .modal-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 169px;
   height: 56px;
   margin: 0 auto;
+  margin-top: 24px;
   padding: 16px 32px;
   border-radius: 4px;
   background: var(--iris);
