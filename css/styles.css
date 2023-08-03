@@ -978,7 +978,8 @@ body {
   fill: transparent;
 }
 
-.modal-accent-privacy {
+.modal-accent-privacy,
+.check-span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1001,9 +1002,16 @@ body {
 }
 
 .modal-form-btn {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
   width: 169px;
   height: 56px;
   margin: 0 auto;
