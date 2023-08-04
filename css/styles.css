@@ -79,7 +79,7 @@ img {
                    та пропиши їх у CSS-файлі: */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -138,7 +138,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  content: '';
+  content: "";
   width: 48px;
   height: 4px;
   flex-shrink: 0;
@@ -150,7 +150,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  content: '';
+  content: "";
   width: 66px;
   height: 4px;
   flex-shrink: 0;
@@ -162,7 +162,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  content: '';
+  content: "";
   width: 48px;
   height: 4px;
   flex-shrink: 0;
@@ -175,7 +175,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  content: '';
+  content: "";
   width: 66px;
   height: 4px;
   flex-shrink: 0;
@@ -188,7 +188,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  content: '';
+  content: "";
   width: 67px;
   height: 4px;
   flex-shrink: 0;
@@ -978,7 +978,7 @@ body {
   fill: transparent;
 }
 
-.modal-accent-privacy,
+/* .modal-accent-privacy, */
 .modal-label-text .check-span {
   display: inline-flex;
   align-items: center;
@@ -990,14 +990,16 @@ body {
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms
-     cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-    .check-span {
-display: inline-flex;
+.check-span {
+  display: inline-flex;
+}
 
-    }
+.modal-link {
+  /* margin-left: 4px; */
+}
 
 .check-input {
   margin-top: 8px;
@@ -1006,22 +1008,20 @@ display: inline-flex;
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
-
-  /* fill: red; */
 }
 
 .modal-form-btn {
   display: block;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
 
-min-width: 169px;
+  min-width: 169px;
   height: 56px;
   margin: 0 auto;
   margin-top: 24px;
@@ -1032,14 +1032,14 @@ min-width: 169px;
   border: none;
   color: var(--white);
   text-align: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-link {
   text-decoration: none;
   text-decoration-line: underline;
   color: var(--iris);
- /* margin-left: 4px; */
+  /* margin-left: 4px; */
 }
 
 /* -------------------------------------------------------------- */
