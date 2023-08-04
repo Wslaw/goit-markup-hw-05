@@ -342,17 +342,25 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-              <p>Subscribe</p>
-              <label for="subscribe" class="subscribe-label"></label>
-              <input type="email" class="subscribe-input"
-               name="subscribe" id="subscribe">
-               <button type="submit" class="subscribe-btn">Subscribe
-                <svg class="subscribe-svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-footer-button"></use>
-                </svg>
-               </button>
+       <div class="subscribe">
+          <p class="subscribe-title">Subscribe</p>
+          <form name="subscribe" class="subscribe-form">
+            <label for="subscribe" class="subscribe-label">
+              <input
+                type="email"
+                class="subscribe-input"
+                name="subscribe"
+                id="subscribe"
+                placeholder="E-mail"
+            /></label>
 
+            <button type="submit" class="subscribe-btn">
+              Subscribe
+              <svg class="subscribe-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-footer-button"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
