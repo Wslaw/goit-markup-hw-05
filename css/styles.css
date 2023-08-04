@@ -840,6 +840,9 @@ letter-spacing: 0.48px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
   fill: var(--white);
+  cursor: pointer;
+  border: 0;
+  
 }
 
 /* --------------------------End of footer---------------- */
