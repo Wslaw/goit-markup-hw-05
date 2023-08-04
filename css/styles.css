@@ -769,8 +769,7 @@ body {
 
 .subscribe-title {
   margin-bottom: 16px;
-}
-.subscribe p {
+
   max-width: 74px;
   min-height: 25px;
   color: var(--white, #fff);
@@ -816,7 +815,9 @@ line-height: 24px; /* 200% */
 letter-spacing: 0.48px; 
 }
 
-
+.subscribe-svg {
+  margin-left: 16px;
+}
 
 .subscribe-btn {
   display: inline-flex;
