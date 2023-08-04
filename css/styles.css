@@ -783,13 +783,14 @@ body {
   letter-spacing: 0.02em;
 }
 
-.subscribe-field {
+.subscribe-form {
   display: flex;
   justify-content: center;
-  margin-right: 24px;
-  margin-top: 16px;
+  gap: 24px;
+  padding-left: 16px;
 }
 .subscribe-input {
+  color: var(--white);
   max-width: 264px;
   min-height: 40px;
   flex-shrink: 0;
@@ -797,9 +798,11 @@ body {
   border: 1px solid var(--white, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  /* gap: 24px;
+  padding-left: 16px; */
 }
 
-.subscribe-field::placeholder .subscribe-label {
+.subscribe-form::placeholder .subscribe-label {
  color: var(--white);
 font-family: Roboto;
 font-size: 12px;
