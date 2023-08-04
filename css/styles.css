@@ -998,9 +998,9 @@ body {
 .check-input:checked + .modal-label-text .check-span {
   background-color: var(--ocean);
   border: none;
-  /* fill: var(--cloud); */
+  fill: var(--cloud);
 
-  fill: red;
+  /* fill: red; */
 }
 
 .modal-form-btn {
