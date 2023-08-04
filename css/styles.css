@@ -979,7 +979,7 @@ body {
 }
 
 .modal-accent-privacy,
-.modal-label-text.check-span {
+.modal-label-text .check-span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
